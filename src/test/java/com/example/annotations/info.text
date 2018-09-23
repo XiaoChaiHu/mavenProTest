@@ -1,0 +1,10 @@
+#测试基于注解的方式配置bean
+AnnotationsBean是一个配置类，使用注解@Configuration
+
+#ApplicationContext是由BeanFactory派生而来，提供更多功能面向实际应用（两者初始化类的时间不同）
+ApplicationContext可以通过以下方式来进行配置bean
+    1.通过配置文件xml的形式，主要的实现类是ClassPathXmlApplicationContext
+    2.使用注解方式，主要实现类是AnnotationConfigApplicationContext
+    3.web专用加载方式，WebApplicationContext，该方式需要ServletContext
+        spring提供了两种启动WebApplicationContext的方法，一种是servlet还有一种是listen分别是ContextLoaderListener和ContextLoaderServlet
+
